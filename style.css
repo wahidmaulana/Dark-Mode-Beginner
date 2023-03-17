@@ -1,0 +1,83 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: salmon;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  padding: 15px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+nav a:hover {
+  background-color: bisque;
+  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+}
+
+.dark nav a:hover {
+  background-color: rgb(139, 241, 139);
+  color: aliceblue;
+}
+
+.info {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40%;
+  animation: JJ font-size 0.5s infinite;
+  -webkit-animation: JJ 0.5s infinite;
+}
+
+@keyframes JJ {
+  0% {
+    font-size: 16px;
+  }
+  50% {
+    font-size: 18px;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
